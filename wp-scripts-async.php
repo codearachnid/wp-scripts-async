@@ -18,6 +18,11 @@ function wp_scripts_async_init(){
     $wp_scripts_async = new WP_Scripts_Async;
 }
 
+add_action( 'wp_loaded', 'wp_scripts_async_load_textdomain' );
+function wp_scripts_async_load_textdomain() {
+	load_plugin_textdomain( 'wp-scripts-async', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+}
+
 
 if( !class_exists( 'WP_Scripts_Async' ) ) {
 	class WP_Scripts_Async extends WP_Scripts {
