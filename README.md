@@ -5,6 +5,10 @@ WordPress Scripts Async
 
 Please use at your own risk and provide pull requests for any improvements.
 
+### Would you like to contribute?!
+
+I do not have a lot of time to devote to this project and would love your help! Use pull request or contact me @codearachnid and I will add you as a contributor.
+
 ### Purpose ###
 
 Extending wp_enqueue_script to use RequireJS for asynchronous loading. Use this plugin to dynamically load your JavaScripts through the UI without hardcoding script references.
